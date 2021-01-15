@@ -6,6 +6,4 @@ import {Component} from '@angular/core';
   styleUrls: ['./task2.component.css']
 })
 export class Task2Component {
-  constructor() {
-  }
 }

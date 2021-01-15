@@ -10,6 +10,5 @@ body {
 }
 
 .content-margin {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 16px;
 }

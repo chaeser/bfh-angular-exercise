@@ -10,9 +10,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 
 import {AppComponent} from './app.component';
-import {Task2Component} from './task2/task2.component';
 import {FormComponent} from './form/form.component';
-
+import {Task2Component} from './task2/task2.component';
 import {ValidationPipe} from './pipes/validation.pipe';
 
 import {ErrorStateMatcher, ShowOnDirtyErrorStateMatcher} from '@angular/material/core';
@@ -20,8 +19,8 @@ import {ErrorStateMatcher, ShowOnDirtyErrorStateMatcher} from '@angular/material
 @NgModule({
   declarations: [
     AppComponent,
-    Task2Component,
     FormComponent,
+    Task2Component,
     ValidationPipe,
   ],
   imports: [
@@ -36,6 +35,7 @@ import {ErrorStateMatcher, ShowOnDirtyErrorStateMatcher} from '@angular/material
     MatTabsModule,
   ],
   providers: [
+    // validate input fields as soon as the user starts typing
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
   ],
   bootstrap: [AppComponent]

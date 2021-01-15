@@ -1,20 +1,20 @@
-<header>
-  <mat-toolbar color="primary">
-    <span>BFH Exercise</span>
-    <span class="toolbar-flex-space"></span>
-    <span class="right-spacing">Daniel Käser</span>
-    <a mat-icon-button href="mailto:da.kaeser@gmx.ch" title="Send email">
-      <mat-icon color="accent" inline="true">email</mat-icon>
-    </a>
-  </mat-toolbar>
-</header>
-
-<!-- task 1 and 3 -->
-<div class="content-margin">
-  <h1>Task 1 and 3</h1>
-  <app-form></app-form>
-</div>
-
-<!-- task 2 -->
-<h1 class="content-margin">Task 2</h1>
-<app-task2></app-task2>
+<mat-toolbar color="primary">
+  <span>BFH Exercise</span>
+  <span class="toolbar-flex-space"></span>
+  <span class="right-spacing">Daniel Käser</span>
+  <a href="mailto:da.kaeser@gmx.ch" title="Send email">
+    <mat-icon color="accent" inline="true">email</mat-icon>
+  </a>
+</mat-toolbar>
+<mat-tab-group>
+  <mat-tab label="Tasks 1 and 3">
+    <div class="content-margin">
+      <app-form></app-form>
+    </div>
+  </mat-tab>
+  <mat-tab label="Task 2">
+    <div class="content-margin">
+      <app-task2></app-task2>
+    </div>
+  </mat-tab>
+</mat-tab-group>
