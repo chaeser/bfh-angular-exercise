@@ -1,0 +1,5 @@
+<mat-form-field class="full-width">
+  <mat-label>{{ textControl.value || 'write something in the input field to change this label' }}</mat-label>
+  <input matInput type="text" name="digits" [formControl]="textControl">
+  <mat-error>{{ textControl.value | validationPipe }}</mat-error>
+</mat-form-field>
