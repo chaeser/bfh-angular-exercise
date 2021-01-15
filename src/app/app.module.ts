@@ -7,14 +7,17 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import {AppComponent} from './app.component';
 import {Task1Component} from './task1/task1.component';
+import {Task2Component} from './task2/task2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Task1Component
+    Task1Component,
+    Task2Component
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import {Task1Component} from './task1/task1.component';
     MatInputModule,
     MatToolbarModule,
     MatIconModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
